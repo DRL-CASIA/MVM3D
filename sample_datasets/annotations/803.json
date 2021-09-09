@@ -1,0 +1,86 @@
+[
+    {
+        "mark": 0,
+        "VehicleID": 0,
+        "type": 0,
+        "angle": 5.185261307179586,
+        "wx": 5044.532,
+        "wy": 721.1169999999997,
+        "views": [
+            {
+                "viewNum": 0,
+                "xmax": -1,
+                "xmin": -1,
+                "ymax": -1,
+                "ymin": -1
+            },
+            {
+                "viewNum": 1,
+                "xmax": 525,
+                "xmin": 392,
+                "ymax": 320,
+                "ymin": 202
+            }
+        ],
+        "xmax_od": 539,
+        "xmin_od": 469,
+        "ymax_od": 107,
+        "ymin_od": 37
+    },
+    {
+        "mark": 0,
+        "VehicleID": 1,
+        "type": 1,
+        "angle": 0.108156,
+        "wx": 1056.637,
+        "wy": 3219.0299999999997,
+        "views": [
+            {
+                "viewNum": 0,
+                "xmax": 233,
+                "xmin": 0,
+                "ymax": 480,
+                "ymin": 338
+            },
+            {
+                "viewNum": 1,
+                "xmax": 366,
+                "xmin": 306,
+                "ymax": 87,
+                "ymin": 39
+            }
+        ],
+        "xmax_od": 134,
+        "xmin_od": 77,
+        "ymax_od": 350,
+        "ymin_od": 293
+    },
+    {
+        "mark": 0,
+        "VehicleID": 2,
+        "type": 2,
+        "angle": 1.407739,
+        "wx": 2243.861,
+        "wy": 1257.6709999999998,
+        "views": [
+            {
+                "viewNum": 0,
+                "xmax": 70,
+                "xmin": 0,
+                "ymax": 274,
+                "ymin": 163
+            },
+            {
+                "viewNum": 1,
+                "xmax": 527,
+                "xmin": 443,
+                "ymax": 141,
+                "ymin": 74
+            }
+        ],
+        "xmax_od": 254,
+        "xmin_od": 194,
+        "ymax_od": 155,
+        "ymin_od": 95
+    }
+]
