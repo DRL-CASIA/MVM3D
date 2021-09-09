@@ -42,7 +42,7 @@ The program are suppose to visualize the ground truth per-view 2D/3D boxes, bird
 
 ## Evaluation Metrics
 
-For localization performance, we use the same evaluation metrics in [MultiviewX](https://github.com/hou-yz/MultiviewX) and [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/) multiview pedestrian detection datasets, which are MODA, MODP, Precision and Recall. 
+For localization performance, we use the same evaluation metrics in [MultiviewX](https://github.com/hou-yz/MultiviewX) and [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/) multiview pedestrian detection datasets, which are MODA, MODP, Precision and Recall. The evaluation toolkit could be referenced from [here](https://github.com/hou-yz/MVDet/tree/master/multiview_detector/evaluation).
 
-For 3D detection metrics, we use AP, AOS and OS introduced in [KITTI](https://projet.liris.cnrs.fr/imagine/pub/proceedings/CVPR2012/data/papers/424_O3C-04.pdf) benchmark.
+For 3D detection metrics, we use AP, AOS and OS introduced in [KITTI](https://projet.liris.cnrs.fr/imagine/pub/proceedings/CVPR2012/data/papers/424_O3C-04.pdf) benchmark. The evaluation toolkit could be referenced from [here](https://www.mathworks.com/help/vision/ref/evaluatedetectionaos.html).
 
