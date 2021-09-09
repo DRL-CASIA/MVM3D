@@ -34,6 +34,7 @@ Some sample images and annotations are provided in [sample_datasets](sample_data
 By running the following command:
 
 ```markdown
+cd sample_dataset
 python visualize.py
 ```
 
