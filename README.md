@@ -29,7 +29,15 @@ Note that this is **NOT** the final version of this dataset, more images and ann
 
 ## Toolkits
 
-*In progress...*
+Some sample images and annotations are provided in [sample_datasets](sample_datasets/) folder.
+
+By running the following command:
+
+```markdown
+python visualize.py
+```
+
+The program are suppose to visualize the ground truth per-view 2D/3D boxes, birds-eye-view robot locations and orientations.
 
 ## Evaluation Metrics
 
