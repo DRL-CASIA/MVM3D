@@ -2,7 +2,7 @@
 
 ## Dataset introduction
 
-The MVM3D dataset is designed for multiview 3D detection in occlusion scenarios. Currently, monocular 3D detection dataset and multiview monocular detection dataset have thrived and emerged in recent years. However, less algorithms and datasets focus on 3D detection with occlusions. Inspired by [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/), [MultiviewX](https://github.com/hou-yz/MultiviewX) and RoboMaster Univeristy AI Challenge, we develop a multiview monocular sentry detection dataset, **MVM3D** dataset.
+The MVM3D dataset is designed for multiview 3D detection in occlusion scenarios. Currently, monocular 3D detection dataset and multiview monocular detection dataset have thrived and emerged in recent years. However, less algorithms and datasets focus on 3D detection with occlusions. Inspired by [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/), [MultiviewX](https://github.com/hou-yz/MultiviewX) and [RoboMaster Univeristy AI Challenge](https://www.robomaster.com/en-US/robo/icra), we develop a multiview monocular sentry detection dataset, **MVM3D** dataset.
 
 ![dataset](imgs/dataset.png)
 
