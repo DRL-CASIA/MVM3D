@@ -3,6 +3,9 @@ import cv2
 import os
 import math
 
+intrinsic_camera_matrix_filenames = ['intri_left.xml', 'intri_right.xml']
+extrinsic_camera_matrix_filenames = ['extri_left.xml', 'extri_right.xml']
+
 # camera calibration to get the rvec and tvec
 def camera_calibration(camera):
     if (camera == "left"):
@@ -54,6 +57,26 @@ def camera_calibration(camera):
     fz_tvec = translation_vector
 
     return fz_rvec, fz_tvec, fz_camera_matrix
+
+
+def get_intrinsic_extrinsic_matrix(self, camera_i, root):
+    intrinsic_camera_path = os.path.join(root, 'calibration', 'intrinsic')
+    intrinsic_params_file = cv2.FileStorage(os.path.join(intrinsic_camera_path,
+                                                         intrinsic_camera_matrix_filenames[camera_i]),
+                                            flags=cv2.FILE_STORAGE_READ)
+    intrinsic_matrix = intrinsic_params_file.getNode('intri_matrix').mat()
+    intrinsic_params_file.release()
+
+    extrinsic_camera_path = os.path.join(root, 'calibration', 'extrinsic')
+    extrinsic_params_file = cv2.FileStorage(os.path.join(extrinsic_camera_path,
+                                                         extrinsic_camera_matrix_filenames[camera_i]),
+                                            flags=cv2.FILE_STORAGE_READ)
+    extrinsic_matrix = extrinsic_params_file.getNode('extri_matrix').mat()
+    extrinsic_params_file.release()
+    # convert millimeter to centimeter
+    for i in range(3):
+        extrinsic_matrix[i, 3] /= 10
+    return intrinsic_matrix, extrinsic_matrix
 
 # 3D points to image points
 def getimage(points3d, rvec, tvec, camera_matrix):
