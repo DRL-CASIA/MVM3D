@@ -4,7 +4,9 @@
 
 We propose a novel multi-view framework for occlusion free 3D detection and MVM3D dataset for multi-view detection in occlusion scenarios.
 
-![dataset](misc/multibin_8.gif)
+<div  align="center">    
+<img src="misc/multibin_8.gif" width = 640 height = 480 />
+</div>
 
 ## Table of content
 
