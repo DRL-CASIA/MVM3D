@@ -39,7 +39,7 @@ We propose a novel multi-view framework for occlusion free 3D detection and MVM3
 
 ### Credit
 
-Our code mainly refers to these two repos: [MVDet](https://github.com/ZichengDuan/MVDet#mvdet-code) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exists in our implementation.
+Our code mainly refers to these two repos: [MVDet](https://github.com/ZichengDuan/MVDet#mvdet-code) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exist in our implementation.
 
 
 
