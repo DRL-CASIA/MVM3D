@@ -4,13 +4,12 @@
 
 We propose a novel multi-view framework for occlusion free 3D detection and MVM3D dataset for multi-view detection in occlusion scenarios.
 
-<div  align="center">    
-<img src="misc/multibin_8.gif" width = 640 height = 480 />
-</div>
+<img src="misc/res.png">
+
+Our results are shown in row No.1, row 2 shows [MVDet](https://github.com/hou-yz/MVDet) results, and row No. 3 shows the ground truth.
 
 ## Table of content
 
-## Content
 - [MVM3Det code](#mvm3det-code)
     * [Usage](#usage)
     * [Training](#training)
@@ -21,7 +20,6 @@ We propose a novel multi-view framework for occlusion free 3D detection and MVM3
     * [Downloads](#downloads)
     * [Toolkits](#toolkits)
     * [Evaluation Metrics](#evaluation-metrics)
-
 
 ## MVM3Det code
 
@@ -39,7 +37,7 @@ We propose a novel multi-view framework for occlusion free 3D detection and MVM3
 
 ### Credit
 
-Our code mainly refers to these two repos: [MVDet](https://github.com/ZichengDuan/MVDet#mvdet-code) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exist in our implementation.
+Our code mainly refers to these two repos: [MVDet](https://github.com/hou-yz/MVDet) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exist in our implementation.
 
 
 
