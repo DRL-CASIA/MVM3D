@@ -8,7 +8,18 @@ We propose a novel multi-view framework for occlusion free 3D detection and MVM3
 
 ## Table of content
 
-[toc]
+## Content
+- [MVM3Det code](#mvm3det-code)
+    * [Usage](#usage)
+    * [Training](#training)
+    * [Inference](#inference)
+    * [Credit](#credit)
+- [MVM3D dataset](#mvm3d-dataset)
+    * [Label infomation](#label-information)
+    * [Downloads](#downloads)
+    * [Toolkits](#toolkits)
+    * [Evaluation Metrics](#evaluation-metrics)
+
 
 ## MVM3Det code
 
