@@ -4,48 +4,54 @@
 
 We propose a novel multi-view framework for occlusion free 3D detection and MVM3D dataset for multi-view detection in occlusion scenarios.
 
-<img src="misc/res.png">
+![dataset](misc/res.png)
 
 Our results are shown in row No.1, row 2 shows ground truth results, and row No. 3 shows  [MVDet](https://github.com/hou-yz/MVDet) results.
 
 ## Table of content
 
 - [MVM3Det code](#mvm3det-code)
+    * [Code Preparations](#code-preparations)
     * [Training](#training)(In progress...)
-    * [Inference](#inference)(In progress...)
+    * [Inference](#inference)
     * [Credit](#credit)
 - [MVM3D dataset](#mvm3d-dataset)
-    * [Label infomation](#label-information)
+    * [Label Information](#label-information)
     * [Downloads](#downloads)
     * [Toolkits](#toolkits)(In progress...)
     * [Evaluation Metrics](#evaluation-metrics)
 
 ## MVM3Det code
+### Code Preparations
+1. Clone this repository into your local folder.
+2. Prepare MVM3D dataset, please refer to [Downloads](#downloads) for detailed instructions.
+3. Open `/code/EX_CONST.py` and modify the variable called `data_root` as `data_root = '/your_dataset_path/MVM3D'`
 
 ### Training
 
 *In progress...*
 
 ### Inference
+Please make sure you have finished [Code Preparations](#code-preparations).
 
-Best MVM3Det model for MVM3D dataset could be found here, download the PPN and MBON models to folder `~/Inference/model` , then run
+Best MVM3Det model for MVM3D dataset could be obtained in [BaiduNetDisk](https://pan.baidu.com/s/1Ct57rp9bBUQOQDc15VQzMQ) (pwd: 09t1), download `ppn.pth` and `mbon.pth` models to folder `/codes/pretrained_models`.
+
 
 ```
+cd codes
 python infer.py
 ```
 
-The program should automatically returns similar results 95.9% MODA, 49.0% $AP_{bev}(IoU = 0.5) $ and 45.5% $AOS(IoU=0.5)$reported in the paper.
+The inference program should automatically returns similar results to `95.9% MODA`, `49.0% AP(IoU = 0.5)` and `45.5% AOS(IoU=0.5)` reported in the paper.
 
-*In progress...*
 
 
 
 ### Credit
 
-Our code mainly refers to these two repos: [MVDet](https://github.com/hou-yz/MVDet) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exist in our implementation.
-
-
-
+Our code mainly refers to these two repos: [MVDet](https://github.com/hou-yz/MVDet) and [simple-faster-rcnn-pytorch](https://github.com/chenyuntc/simple-faster-rcnn-pytorch) and [3D-BoundingBox](https://github.com/skhadem/3D-BoundingBox). Some of the origin codes still exist in our implementation.  
+  
+    
 ## MVM3D dataset
 
 The MVM3D dataset is designed for multiview 3D detection in occlusion scenarios. Currently, monocular 3D detection dataset and multiview monocular detection dataset have thrived and emerged in recent years. However, less algorithms and datasets focus on 3D detection with occlusions. Inspired by [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/), [MultiviewX](https://github.com/hou-yz/MultiviewX) and [RoboMaster Univeristy AI Challenge](https://www.robomaster.com/en-US/robo/icra), we develop a multiview monocular sentry detection dataset, **MVM3D** dataset.
@@ -71,6 +77,13 @@ The dataset is based on IEEE ICRA 2021 RoboMaster AI Challenge, including battle
 
 Part of the data could be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1cL16r0gNa3lVBBdD-BaCTA) (Pwd: 0wp5) and [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7170273_anu_edu_au/EZMfq2ku37NGtTTPK0Yn6ZEBjcaw-RTVqomjFp7W60NPUw?e=3v5muZ).
 
+Extract the downloaded zip file called `MVM3D.zip` into `/your_dataset_path/`.
+
+The dataset folder structure should be like this:
+```
+your_dataset_path
+└─ MVM3D
+```
 Note that this is **NOT** the final version of this dataset, more images and annotations are in progress.
 
 ### Toolkits
