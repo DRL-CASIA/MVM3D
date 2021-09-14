@@ -11,21 +11,16 @@ Our results are shown in row No.1, row 2 shows ground truth results, and row No.
 ## Table of content
 
 - [MVM3Det code](#mvm3det-code)
-    * [Usage](#usage)
-    * [Training](#training)
-    * [Inference](#inference)
+    * [Training](#training)(In progress...)
+    * [Inference](#inference)(In progress...)
     * [Credit](#credit)
 - [MVM3D dataset](#mvm3d-dataset)
     * [Label infomation](#label-information)
     * [Downloads](#downloads)
-    * [Toolkits](#toolkits)
+    * [Toolkits](#toolkits)(In progress...)
     * [Evaluation Metrics](#evaluation-metrics)
 
 ## MVM3Det code
-
-### Usage
-
-*In progress...*
 
 ### Training
 
@@ -33,7 +28,17 @@ Our results are shown in row No.1, row 2 shows ground truth results, and row No.
 
 ### Inference
 
+Best MVM3Det model for MVM3D dataset could be found here, download the PPN and MBON models to folder `~/Inference/model` , then run
+
+```
+python infer.py
+```
+
+The program should automatically returns similar results 95.9% MODA, 49.0% $AP_{bev}(IoU = 0.5) $ and 45.5% $AOS(IoU=0.5)$reported in the paper.
+
 *In progress...*
+
+
 
 ### Credit
 
