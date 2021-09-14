@@ -6,7 +6,7 @@ We propose a novel multi-view framework for occlusion free 3D detection and MVM3
 
 <img src="misc/res.png">
 
-Our results are shown in row No.1, row 2 shows [MVDet](https://github.com/hou-yz/MVDet) results, and row No. 3 shows the ground truth.
+Our results are shown in row No.1, row 2 shows ground truth results, and row No. 3 shows  [MVDet](https://github.com/hou-yz/MVDet) results.
 
 ## Table of content
 
