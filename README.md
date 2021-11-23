@@ -87,16 +87,7 @@ your_dataset_path
 Note that this is **NOT** the final version of this dataset, more images and annotations are in progress.
 
 ### Toolkits
-
-Some sample images and annotations are provided in [sample_datasets](sample_datasets/) folder.
-
-By running the following command:
-
-```markdown
-cd sample_dataset
-python visualize.py
-```
-
+Please refer to repo [DRL-CASIA/NeuronsDataset](https://github.com/DRL-CASIA/NeuronsDataset) for more details.
 The program are suppose to visualize the ground truth per-view 2D/3D boxes, birds-eye-view robot locations and orientations.
 
 ## Evaluation Metrics
