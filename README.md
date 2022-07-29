@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We propose a novel multi-view framework for occlusion free 3D detection and MVM3D dataset for multi-view detection in occlusion scenarios.
+We propose a novel multiview monocular 3D detection network [MVM3Det](#mvm3det) and a  dataset [MVM3D](#mvm3d-dataset) for multi-view detection in occlusion scenarios.
 
 ![dataset](misc/res.png)
 
@@ -10,18 +10,22 @@ Our results are shown in row No.1, row 2 shows ground truth results, and row No.
 
 ## Table of content
 
-- [MVM3Det code](#mvm3det-code)
-    * [Code Preparations](#code-preparations)
-    * [Training](#training)(In progress...)
-    * [Inference](#inference)
-    * [Credit](#credit)
-- [MVM3D dataset](#mvm3d-dataset)
-    * [Label Information](#label-information)
-    * [Downloads](#downloads)
-    * [Toolkits](#toolkits)
-    * [Evaluation Metrics](#evaluation-metrics)
 
-## MVM3Det code
+- [MVM3Det: A Novel Framework for Multi-view Monocular 3D Object Detection[arXiv].](#mvm3det-a-novel-framework-for-multi-view-monocular-3d-object-detectionarxiv)
+  - [Introduction](#introduction)
+  - [Table of content](#table-of-content)
+  - [MVM3Det](#mvm3det)
+    - [Code Preparations](#code-preparations)
+    - [Training](#training)
+    - [Inference](#inference)
+    - [Credit](#credit)
+- [MVM3D dataset](#mvm3d-dataset)
+    - [Label information](#label-information)
+    - [Downloads](#downloads)
+    - [Toolkits](#toolkits)
+  - [Evaluation Metrics](#evaluation-metrics)
+
+## MVM3Det
 ### Code Preparations
 1. Clone this repository into your local folder.
 2. Prepare MVM3D dataset, please refer to [Downloads](#downloads) for detailed instructions.
@@ -58,15 +62,15 @@ The MVM3D dataset is designed for multiview 3D detection in occlusion scenarios.
 
 ![dataset](misc/dataset2.png)
 
+
 The dataset is based on IEEE ICRA 2021 RoboMaster AI Challenge, including battle robot cars as detection targets and block obstacles as occlusion. The battleground is defined as a 4.49 meter by 8 meter plane ground, containing 9 fixed blocks as obstacles. The images are captured by 2 syncronized cameras, and the resolution of each image is 640 by 480, the image exposure time varies from 15000 microseconds to 30000 microseconds. The frame rate is 10 and each frame contains 1 to 4 robot cars as targets. 
 
-*In progress...*
 
 ### Label information
-
+![dataset](misc/test.gif)
 1. Images from left and right cameras.
 2. Ground truth label for:
-   - Robot car world coordinates, denoted as [x, y].
+   - Robot car world coordinates, denoted as [x, y], using `ij` indexing.
    - Robot car orientations, calculated in radius.
    - Robot car classification labels, denoted as [0, 1, 2, 3].
    - 2D/3D/BEV bounding boxes.
@@ -90,9 +94,13 @@ Note that this is **NOT** the final version of this dataset, more images and ann
 Please refer to repo [DRL-CASIA/NeuronsDataset](https://github.com/DRL-CASIA/NeuronsDataset) for more details.
 The program are suppose to visualize the ground truth per-view 2D/3D boxes, birds-eye-view robot locations and orientations.
 
-## Evaluation Metrics
+## Evaluation
+For a intergraterd metric evaluator, please see [Metric Calculator](https://github.com/ZichengDuan/Metric-Calculator).
 
-For localization performance, we use the same evaluation metrics in [MultiviewX](https://github.com/hou-yz/MultiviewX) and [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/) multiview pedestrian detection datasets, which are MODA, MODP, Precision and Recall. The evaluation toolkit could be referenced from [here](https://github.com/hou-yz/MVDet/tree/master/multiview_detector/evaluation).
+Or seperately:
+- For localization performance, we use the same evaluation metrics in [MultiviewX](https://github.com/hou-yz/MultiviewX) and [WildTrack](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/) multiview pedestrian detection datasets, which are MODA, MODP, Precision and Recall. The evaluation toolkit could be referenced from [here](https://github.com/hou-yz/MVDet/tree/master/multiview_detector/evaluation).
 
-For 3D detection metrics, we use AP, AOS and OS introduced in [KITTI](https://projet.liris.cnrs.fr/imagine/pub/proceedings/CVPR2012/data/papers/424_O3C-04.pdf) benchmark. The evaluation toolkit could be referenced from [here](https://www.mathworks.com/help/vision/ref/evaluatedetectionaos.html).
+- For 3D detection metrics, we use AP, AOS and OS introduced in [KITTI](https://projet.liris.cnrs.fr/imagine/pub/proceedings/CVPR2012/data/papers/424_O3C-04.pdf) benchmark. The evaluation toolkit could be referenced from [here](https://www.mathworks.com/help/vision/ref/evaluatedetectionaos.html).
+
+
 
