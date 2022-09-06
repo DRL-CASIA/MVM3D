@@ -13,7 +13,7 @@ from codes.EX_CONST import Const
 import numpy as np
 import torch
 import torchvision.transforms as T
-from codes.models.persp_trans_detector import PerspTransDetector
+from codes.models.PPN import PerspTransDetector
 from codes.utils.image_utils import img_color_denormalize
 from codes.datasets.MVM3D import MVM3D
 from codes.datasets.MVM3D_loader import MVM3D_loader
